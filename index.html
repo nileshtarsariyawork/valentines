@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilesh ❤️ Madhuri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="floating-hearts-container" id="bgHearts"></div>
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="musicToggle" aria-label="Toggle Music">
+            <span class="icon">🎵</span>
+        </button>
+        <audio id="bgMusic" loop>
+            <source src="https://assets.mixkit.co/music/preview/mixkit-beautiful-dream-493.mp3" type="audio/mp3">
+            <!-- Fallback or user can replace with their own file -->
+        </audio>
+    </div>
+
+    <!-- Section 1: Landing -->
+    <section id="landing" class="screen flex-center">
+        <div class="glass-card hero-card">
+            <h1 class="fade-in-up">Hey Madhuri...</h1>
+            <p class="fade-in-up delay-1">I have something to tell you.</p>
+            <button id="startBtn" class="pulse-btn fade-in-up delay-2">💖 Tap to Begin 💖</button>
+        </div>
+    </section>
+
+    <!-- Section 2: Personal Message -->
+    <section id="message" class="screen flex-center hidden">
+        <div class="glass-card message-card">
+            <div class="heart-beat-bg">❤️</div>
+            <p class="typewriter-text" id="loveMessage">
+                <!-- Text injected via JS -->
+            </p>
+        </div>
+        <div class="scroll-indicator">↓ Scroll for Memories ↓</div>
+    </section>
+
+    <!-- Section: Valentine's Week Timeline -->
+    <section id="valentine-week" class="screen flex-column ">
+        <h2 class="section-title">Seven Days of Love 💝</h2>
+        <div class="week-container">
+            <div class="day-card" style="--delay: 1;">
+                <div class="icon">🌹</div>
+                <h3>Rose Day</h3>
+                <p>"For lovely <strong>Madhuri</strong>, a rose speaks of love silently, in a language known only to the
+                    heart."</p>
+            </div>
+            <div class="day-card" style="--delay: 2;">
+                <div class="icon">💍</div>
+                <h3>Propose Day</h3>
+                <p>"<strong>Madhuri</strong>, I don't need a thousand words... just you. Will you be mine forever?"</p>
+            </div>
+            <div class="day-card" style="--delay: 3;">
+                <div class="icon">🍫</div>
+                <h3>Chocolate Day</h3>
+                <p>"Life is like a chocolate box, and each moment with you, <strong>Madhuri</strong>, is the sweetest
+                    truffle."</p>
+            </div>
+            <div class="day-card" style="--delay: 4;">
+                <div class="icon">🧸</div>
+                <h3>Teddy Day</h3>
+                <p>"Sending you a teddy to hold when <strong>Nilesh</strong> is not there. But know my heart is always
+                    with you."</p>
+            </div>
+            <div class="day-card" style="--delay: 5;">
+                <div class="icon">🤝</div>
+                <h3>Promise Day</h3>
+                <p>"I, <strong>Nilesh</strong>, promise to walk with you, hold your hand, and never let you feel alone."
+                </p>
+            </div>
+            <div class="day-card" style="--delay: 6;">
+                <div class="icon">🤗</div>
+                <h3>Hug Day</h3>
+                <p>"One hug from <strong>Madhuri</strong> fixes everything. You are my safe place."</p>
+            </div>
+            <div class="day-card" style="--delay: 7;">
+                <div class="icon">💋</div>
+                <h3>Kiss Day</h3>
+                <p>"A kiss for <strong>Madhuri</strong> is a secret told to the mouth instead of the ear."</p>
+            </div>
+            <div class="day-card" style="--delay: 8;">
+                <div class="icon">❤️</div>
+                <h3>Valentine's Day</h3>
+                <p>"In you, <strong>Madhuri</strong>, I've found my love, my partner, and my best friend. <br>Forever
+                    yours, <strong>Nilesh</strong>."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Photo Gallery -->
+    <section id="gallery" class="screen flex-column visible">
+        <h2 class="section-title">Our Memories ✨</h2>
+        <div class="gallery-grid">
+            <!-- Videos first for impact -->
+            <div class="polaroid tilt-left" style="--delay: 1;">
+                <video src="memories/V_001.mp4" controls preload="metadata"></video>
+                <div class="caption">Our Story Begins 🎥</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 2;">
+                <video src="memories/V_002.mp4" controls preload="metadata"></video>
+                <div class="caption">Sweet Moments 💕</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 3;">
+                <video src="memories/V_003.mp4" controls preload="metadata"></video>
+                <div class="caption">Forever & Always 🌹</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 4;">
+                <video src="memories/V_004.mp4" controls preload="metadata"></video>
+                <div class="caption">Just Us Two 💑</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 5;">
+                <video src="memories/V_005.mp4" controls preload="metadata"></video>
+                <div class="caption">Magic in the Air ✨</div>
+            </div>
+
+            <!-- Images -->
+            <div class="polaroid tilt-right" style="--delay: 6;"><img src="memories/001.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Us ❤️</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 7;"><img src="memories/002.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">My Love</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 8;"><img src="memories/003.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Beautiful Day</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 9;"><img src="memories/004.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Smiles</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 10;"><img src="memories/005.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Together</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 11;"><img src="memories/006.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Happiness</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 12;"><img src="memories/007.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Joy</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 13;"><img src="memories/008.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Love</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 14;"><img src="memories/009.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Memories</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 15;"><img src="memories/010.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Sweet</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 16;"><img src="memories/011.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">You & Me</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 17;"><img src="memories/012.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Forever</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 18;"><img src="memories/013.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Heart</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 19;"><img src="memories/014.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Soul</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 20;"><img src="memories/015.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Life</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 21;"><img src="memories/016.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Laughs</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 22;"><img src="memories/017.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Dreams</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 23;"><img src="memories/018.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Moments</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 24;"><img src="memories/019.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Cherish</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 25;"><img src="memories/020.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Adore</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 26;"><img src="memories/021.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Kindness</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 27;"><img src="memories/022.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Warmth</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 28;"><img src="memories/024.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Sunshine</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 29;"><img src="memories/025.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Bliss</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 30;"><img src="memories/026.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Cuddles</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 31;"><img src="memories/027.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Hugs</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 32;"><img src="memories/028.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Kisses</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 33;"><img src="memories/032.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Romance</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 34;"><img src="memories/033.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Date Night</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 35;"><img src="memories/034.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Fun</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 36;"><img src="memories/035.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Silly</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 37;"><img src="memories/036.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Cute</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 38;"><img src="memories/037.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Pretty</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 39;"><img src="memories/038.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Handsome</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 40;"><img src="memories/039.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Glow</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 41;"><img src="memories/040.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Sparkle</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 42;"><img src="memories/041.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Shine</div>
+            </div>
+            <div class="polaroid tilt-left" style="--delay: 43;"><img src="memories/042.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">Star</div>
+            </div>
+            <div class="polaroid tilt-right" style="--delay: 44;"><img src="memories/043.jpeg" loading="lazy"
+                    alt="Memory">
+                <div class="caption">My World 🌎</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Surprise Interaction -->
+    <section id="surprise" class="screen flex-center">
+        <div class="envelope-container">
+            <div id="envelope" class="envelope">
+                <div class="front">
+                    <div class="seal">💌</div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>My Heart is Yours</h3>
+                        <p>Forever & Always.</p>
+                        <div class="secret-msg">I Love You! ❤️</div>
+                    </div>
+                </div>
+            </div>
+            <button id="openHeartBtn" class="glow-btn">Open My Heart 💌</button>
+        </div>
+    </section>
+
+    <!-- Section 5: Ending -->
+    <section id="ending" class="screen flex-center">
+        <div class="final-scene">
+            <h1 class="big-title">Happy Valentine's Day!</h1>
+            <div class="pulsing-heart">❤️</div>
+            <p class="signature">With love, Nilesh</p>
+            <button id="restartBtn" class="text-btn">Replay</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
